@@ -1,4 +1,5 @@
 import { FlaskConical, Target, Star, Users } from "lucide-react";
+import Image from "next/image";
 
 const highlights = [
   {
@@ -27,7 +28,8 @@ export default function About() {
   return (
     <section id="sobre-mi" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        {/* Top: Text + highlights grid */}
+        <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
           {/* Text */}
           <div>
             <p className="text-xs font-semibold tracking-widest uppercase text-[var(--color-teal)] mb-4">
@@ -93,6 +95,31 @@ export default function About() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Lab photo — full width banner */}
+        <div className="relative w-full h-64 sm:h-80 rounded-3xl overflow-hidden">
+          <Image
+            src="/florencia-lab.jpg"
+            alt="Florencia Quiroga trabajando en el laboratorio"
+            fill
+            className="object-cover object-top"
+            sizes="(max-width: 1280px) 100vw, 1152px"
+          />
+          {/* Dark gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-ink)]/70 via-[var(--color-ink)]/30 to-transparent" />
+
+          {/* Caption overlay */}
+          <div className="absolute inset-0 flex items-end p-8">
+            <div>
+              <p className="text-white/60 text-xs font-semibold tracking-widest uppercase mb-1">
+                En el laboratorio
+              </p>
+              <p className="text-white text-xl sm:text-2xl font-bold leading-tight max-w-sm">
+                Donde la teoría se convierte en resultado
+              </p>
+            </div>
           </div>
         </div>
       </div>
