@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-jakarta: var(--font-jakarta);
+
+  --color-bg: #F7F8FA;
+  --color-surface: #FFFFFF;
+  --color-ink: #0D1B2A;
+  --color-ink-muted: #5B6878;
+  --color-teal: #0E9F8E;
+  --color-teal-light: #E6F7F5;
+  --color-teal-mid: #C3EDE8;
+  --color-border: #E4EAF0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-teal-mid);
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-teal-light);
+  color: var(--color-ink);
+}
+
+/* Smooth section transitions */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Hex decoration */
+.hex-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52' viewBox='0 0 60 52'%3E%3Cpolygon points='30,2 56,16 56,36 30,50 4,36 4,16' fill='none' stroke='%230E9F8E' stroke-width='0.6' stroke-opacity='0.12'/%3E%3C/svg%3E");
+  background-size: 60px 52px;
+}
