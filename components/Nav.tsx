@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const links = [
   { label: "Sobre mí", href: "#sobre-mi" },
@@ -36,9 +37,16 @@ export default function Nav() {
           className="flex items-center gap-2.5 group"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <span className="w-8 h-8 rounded-lg bg-[var(--color-teal)] flex items-center justify-center text-white text-sm font-bold tracking-tight">
-            FQ
-          </span>
+          <div className="w-8 h-8 rounded-lg overflow-hidden ring-2 ring-[var(--color-teal)]/60 flex-shrink-0">
+            <Image
+              unoptimized
+              src="/florencia-lab.png"
+              alt="Florencia Quiroga"
+              width={32}
+              height={32}
+              className="object-cover object-top w-full h-full"
+            />
+          </div>
           <span
             className={`text-sm font-semibold transition-colors ${
               scrolled ? "text-[var(--color-ink)]" : "text-white"

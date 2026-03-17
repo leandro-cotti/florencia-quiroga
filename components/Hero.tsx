@@ -102,6 +102,7 @@ export default function Hero() {
               {/* Photo container */}
               <div className="relative w-80 h-[480px] rounded-2xl overflow-hidden">
                 <Image
+                  unoptimized
                   src="/florencia-portrait.jpg"
                   alt="Florencia Quiroga"
                   fill

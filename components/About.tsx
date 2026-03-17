@@ -101,7 +101,8 @@ export default function About() {
         {/* Lab photo — full width banner */}
         <div className="relative w-full h-64 sm:h-80 rounded-3xl overflow-hidden">
           <Image
-            src="/florencia-lab.jpg"
+            unoptimized
+            src="/florencia-lab-banner.png"
             alt="Florencia Quiroga trabajando en el laboratorio"
             fill
             className="object-cover object-top"
