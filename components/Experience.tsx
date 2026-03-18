@@ -5,8 +5,8 @@ const experiences = [
     icon: Building2,
     role: "Auxiliar Administrativa",
     company: "Municipio de Quilmes",
-    period: "Febrero 2023 — Actualidad",
-    current: true,
+    period: "Febrero 2023 — Marzo 2026",
+    current: false,
     tasks: [
       "Apertura y cierre de informes de asistencias",
       "Seguimiento individualizado de cada caso de asistencia",
