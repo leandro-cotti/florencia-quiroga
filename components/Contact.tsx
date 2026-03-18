@@ -1,5 +1,22 @@
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 
+const LinkedInIcon = () => (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
+
 export default function Contact() {
   const whatsappMessage = encodeURIComponent(
     "Hola Florencia, vi tu portfolio y me gustaría hablar sobre una oportunidad laboral."
@@ -21,7 +38,7 @@ export default function Contact() {
           </p>
 
           {/* Contact cards */}
-          <div className="grid sm:grid-cols-3 gap-4 mb-10">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
             <a
               href="mailto:florencia.quiroga.quimica@gmail.com"
               className="group flex flex-col items-center gap-3 p-6 rounded-2xl border border-[var(--color-border)] hover:border-[var(--color-teal)] hover:bg-[var(--color-teal-light)] transition-all duration-200"
@@ -87,6 +104,25 @@ export default function Contact() {
                 </p>
               </div>
             </div>
+
+            <a
+              href="https://www.linkedin.com/in/florencia-quiroga-176b1221a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col items-center gap-3 p-6 rounded-2xl border border-[var(--color-border)] hover:border-[var(--color-teal)] hover:bg-[var(--color-teal-light)] transition-all duration-200"
+            >
+              <div className="w-12 h-12 rounded-xl bg-[var(--color-teal-light)] group-hover:bg-white flex items-center justify-center transition-colors text-[var(--color-teal)]">
+                <LinkedInIcon />
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-[var(--color-ink-muted)] mb-1 uppercase tracking-wider">
+                  LinkedIn
+                </p>
+                <p className="text-sm font-medium text-[var(--color-ink)]">
+                  florencia-quiroga
+                </p>
+              </div>
+            </a>
           </div>
 
           {/* CTA buttons */}
@@ -106,6 +142,15 @@ export default function Contact() {
             >
               <Phone size={16} />
               WhatsApp
+            </a>
+            <a
+              href="https://www.linkedin.com/in/florencia-quiroga-176b1221a/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border-2 border-[var(--color-teal)] text-[var(--color-teal)] font-semibold hover:bg-[var(--color-teal)] hover:text-white transition-all duration-200 hover:-translate-y-0.5 [&_svg]:text-current"
+            >
+              <LinkedInIcon />
+              LinkedIn
             </a>
           </div>
         </div>
