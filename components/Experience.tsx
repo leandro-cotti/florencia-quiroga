@@ -1,11 +1,40 @@
-import { Briefcase, FlaskConical, Building2 } from "lucide-react";
+import { Briefcase, FlaskConical, Building2, Factory, Beer } from "lucide-react";
 
 const experiences = [
+  {
+    icon: Factory,
+    role: "Operaria de Producción y Control de Calidad",
+    company: "Programa Supersopa · Universidad Nacional de Quilmes",
+    period: "Mayo 2026 - Actualidad",
+    current: true,
+    tasks: [
+      "Controles en proceso y verificación de materias primas y producto terminado",
+      "Muestreo y trazabilidad de lotes en planta industrial de alimentos",
+      "Registro de variables bajo Buenas Prácticas de Manufactura (BPM) y POES",
+      "Higienización y sanitización de equipos",
+      "Manejo de equipos de planta y línea de envasado",
+    ],
+    tags: ["Control de calidad", "BPM y POES", "Trazabilidad", "Industria alimentaria"],
+  },
+  {
+    icon: FlaskConical,
+    role: "Practicante de Investigación en Laboratorio",
+    company: "Laboratorio de Ecotoxicología, Universidad Nacional de Quilmes",
+    period: "Prácticas durante la carrera",
+    current: false,
+    tasks: [
+      "Ejecución de ensayos y bioensayos según protocolos analíticos normalizados",
+      "Preparación y acondicionamiento de muestras: dilución, conservación e identificación",
+      "Registro riguroso de datos, procesamiento e interpretación de resultados",
+      "Aplicación de Buenas Prácticas de Laboratorio (BPL)",
+    ],
+    tags: ["Laboratorio analítico", "Ensayos y bioensayos", "BPL", "Análisis de muestras"],
+  },
   {
     icon: Building2,
     role: "Auxiliar Administrativa",
     company: "Municipio de Quilmes",
-    period: "Febrero 2023 — Marzo 2026",
+    period: "Febrero 2023 - Mayo 2026",
     current: false,
     tasks: [
       "Apertura y cierre de informes de asistencias",
@@ -18,7 +47,7 @@ const experiences = [
     icon: Briefcase,
     role: "Atención al Cliente",
     company: "Universidad Nacional de Quilmes",
-    period: "Marzo 2020 — Enero 2023",
+    period: "Marzo 2020 - Enero 2023",
     current: false,
     tasks: [
       "Atención al cliente y asesoramiento",
@@ -29,11 +58,11 @@ const experiences = [
     tags: ["Atención al cliente", "Gestión de caja", "Control de inventario"],
   },
   {
-    icon: FlaskConical,
+    icon: Beer,
     role: "Elaboración de Bebidas Fermentables",
     company: "Emprendimiento familiar",
-    period: "2020 — Actualidad",
-    current: true,
+    period: "Marzo 2018 - Abril 2024",
+    current: false,
     tasks: [
       "Seguimiento del proceso de fabricación de cerveza artesanal",
       "Compra, control y fraccionamiento de materias primas",

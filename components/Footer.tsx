@@ -20,7 +20,7 @@ export default function Footer() {
           </span>
         </div>
         <p className="text-xs text-white/30 text-center">
-          Técnica Universitaria en Química · Florencio Varela, Buenos Aires
+          Técnica Universitaria en Química · Zona Sur, Gran Buenos Aires
         </p>
         <p className="text-xs text-white/30">
           {new Date().getFullYear()}

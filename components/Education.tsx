@@ -3,26 +3,26 @@ import { GraduationCap, BookOpen } from "lucide-react";
 const education = [
   {
     icon: GraduationCap,
-    degree: "Tecnicatura Universitaria en Química",
+    degree: "Técnica Universitaria en Química",
     institution: "Universidad Nacional de Quilmes",
-    period: "2023 — 2026",
-    status: "En curso",
+    period: "2023 - 2026",
+    status: "Título obtenido · 2026",
     statusColor: "text-[var(--color-teal)] bg-[var(--color-teal-light)]",
     description:
-      "Formación en análisis químico, técnicas instrumentales, control de calidad, microbiología y Buenas Prácticas de Laboratorio.",
+      "Formación en análisis químico, técnicas instrumentales, control de calidad, microbiología y buenas prácticas.",
     highlights: [
       "Técnicas cromatográficas (HPLC, GC)",
       "Análisis fisicoquímicos",
-      "Microbiología básica",
-      "Buenas Prácticas de Laboratorio",
-      "Control de calidad farmacéutico",
+      "Microbiología",
+      "Control de calidad",
+      "Buenas prácticas de laboratorio",
     ],
   },
   {
     icon: BookOpen,
     degree: "Ingeniería en Alimentos",
     institution: "Universidad Nacional de Quilmes",
-    period: "2017 — 2022",
+    period: "2017 - 2022",
     status: "Formación previa",
     statusColor: "text-[var(--color-ink-muted)] bg-[var(--color-border)]",
     description:

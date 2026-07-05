@@ -1,13 +1,16 @@
 const technicalSkills = [
   { name: "HPLC", desc: "Cromatografía líquida de alta presión" },
-  { name: "Cromatografía gaseosa", desc: "Análisis de compuestos volátiles" },
-  { name: "Análisis fisicoquímicos", desc: "Caracterización de muestras" },
-  { name: "Microbiología básica", desc: "Control microbiológico" },
-  { name: "BPL", desc: "Buenas Prácticas de Laboratorio" },
-  { name: "Control de calidad", desc: "Gestión y documentación QC" },
-  { name: "Fermentación", desc: "Control de procesos fermentativos" },
-  { name: "Higienización", desc: "Sanitización de equipos y áreas" },
+  { name: "Cromatografía gaseosa (GC)", desc: "Análisis de compuestos volátiles" },
+  { name: "Espectrofotometría UV-Vis", desc: "Determinaciones por absorbancia" },
+  { name: "Análisis fisicoquímicos", desc: "pH, densidad y °Brix" },
+  { name: "Titulaciones y gravimetrías", desc: "Análisis volumétrico y por peso" },
+  { name: "Preparación de reactivos", desc: "Soluciones, estándares y diluciones" },
+  { name: "Microbiología", desc: "Control microbiológico" },
+  { name: "Calibración de equipos", desc: "Verificación y ajuste de instrumental" },
+  { name: "Muestreo y control en proceso", desc: "Materias primas y producto terminado" },
 ];
+
+const qualityStandards = ["BPM / GMP", "BPL", "POES", "HACCP"];
 
 const tools = [
   { name: "SAP" },
@@ -62,6 +65,23 @@ export default function Skills() {
                     {s.desc}
                   </p>
                 </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Quality standards */}
+          <div>
+            <h3 className="text-xs font-semibold tracking-widest uppercase text-[var(--color-ink-muted)] mb-6">
+              Normas de calidad
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {qualityStandards.map((n) => (
+                <span
+                  key={n}
+                  className="px-3 py-1.5 rounded-full bg-[var(--color-teal-light)] border border-[var(--color-teal-mid)] text-sm font-semibold text-[var(--color-teal)] cursor-default"
+                >
+                  {n}
+                </span>
               ))}
             </div>
           </div>

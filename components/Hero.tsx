@@ -41,13 +41,15 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-base sm:text-lg text-white/70 leading-relaxed max-w-xl mb-10 font-light">
-              Perfil analítico y orientación al{" "}
+              Combino el{" "}
               <span className="text-white/90 font-medium">
-                laboratorio farmacéutico
-              </span>
-              . Formada en técnicas cromatográficas, análisis fisicoquímicos y{" "}
-              <span className="text-white/90 font-medium">control de calidad</span>
-              .
+                laboratorio analítico
+              </span>{" "}
+              con el{" "}
+              <span className="text-white/90 font-medium">control de calidad</span>{" "}
+              en la industria alimentaria y farmacéutica. Formada en técnicas
+              cromatográficas, análisis fisicoquímicos y controles en planta bajo
+              BPM y POES.
             </p>
 
             {/* CTAs */}
@@ -70,24 +72,24 @@ export default function Hero() {
             {/* Contact quick info */}
             <div className="flex flex-wrap gap-5">
               <a
-                href="mailto:florencia.quiroga.quimica@gmail.com"
+                href="mailto:fquiroga1396@gmail.com"
                 className="flex items-center gap-2 text-sm text-white/40 hover:text-[var(--color-teal)] transition-colors"
               >
                 <Mail size={13} />
-                florencia.quiroga.quimica@gmail.com
+                fquiroga1396@gmail.com
               </a>
               <a
-                href="https://wa.me/541166875636"
+                href="https://wa.me/5491166875636"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-white/40 hover:text-[var(--color-teal)] transition-colors"
               >
                 <Phone size={13} />
-                +54 11 6687 5636
+                +54 9 11 6687 5636
               </a>
               <span className="flex items-center gap-2 text-sm text-white/40">
                 <MapPin size={13} />
-                Florencio Varela
+                Zona Sur, Gran Buenos Aires
               </span>
             </div>
           </div>

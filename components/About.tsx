@@ -10,7 +10,7 @@ const highlights = [
   {
     icon: Target,
     title: "Control de calidad",
-    desc: "Conocimientos en Buenas Prácticas de Laboratorio (BPL) y gestión de documentación.",
+    desc: "Controles en planta y laboratorio bajo Buenas Prácticas de Manufactura (BPM) y POES.",
   },
   {
     icon: Star,
@@ -41,34 +41,36 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-[var(--color-ink-muted)] leading-relaxed">
               <p>
-                Soy Técnica Universitaria en Química egresada de la Universidad
-                Nacional de Quilmes, con una trayectoria académica que incluye
-                formación previa en Ingeniería en Alimentos.
+                Soy Técnica Universitaria en Química, recibida en la Universidad
+                Nacional de Quilmes (2026), con formación previa en Ingeniería en
+                Alimentos.
               </p>
               <p>
-                A lo largo de mi carrera desarrollé competencias en técnicas
+                Combino el trabajo de laboratorio analítico con el control de
+                calidad en producción de alimentos. Manejo técnicas
                 instrumentales como{" "}
                 <span className="text-[var(--color-ink)] font-medium">
                   HPLC y cromatografía gaseosa
                 </span>
-                , análisis fisicoquímicos y microbiología básica. Me enfoco
-                especialmente en el área de{" "}
+                , espectrofotometría UV-Vis, análisis fisicoquímicos y
+                microbiología, y aplico{" "}
                 <span className="text-[var(--color-ink)] font-medium">
-                  control de calidad en la industria farmacéutica
-                </span>
-                .
+                  controles de calidad en planta
+                </span>{" "}
+                bajo Buenas Prácticas de Manufactura (BPM) y POES.
               </p>
               <p>
-                Mi experiencia en el emprendimiento familiar de elaboración de
-                bebidas fermentables me permitió aplicar en la práctica procesos
-                de higienización, sanitización y control en fermentación —
-                habilidades directamente transferibles al laboratorio industrial.
+                Actualmente trabajo como operaria de producción y control de
+                calidad en el Programa Supersopa (UNQ), donde hago controles en
+                proceso, muestreo y verificación de materias primas y producto
+                terminado, trazabilidad de lotes y registro de variables. Antes,
+                en el emprendimiento familiar de bebidas fermentables, apliqué
+                procesos de higienización, sanitización y control de fermentación.
               </p>
               <p>
-                Soy una persona responsable, orientada al detalle y con alta
-                capacidad de aprendizaje. Me entusiasma cada oportunidad de
-                crecer profesionalmente dentro del sector químico y
-                farmacéutico.
+                Soy responsable, ordenada y orientada al detalle, con ganas de
+                seguir creciendo tanto en la industria alimenticia como en el
+                laboratorio químico y farmacéutico.
               </p>
             </div>
           </div>
@@ -98,7 +100,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Lab photo — full width banner */}
+        {/* Lab photo - full width banner */}
         <div className="relative w-full h-64 sm:h-80 rounded-3xl overflow-hidden">
           <Image
             unoptimized

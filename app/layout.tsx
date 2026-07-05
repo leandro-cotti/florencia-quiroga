@@ -9,21 +9,28 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Florencia Quiroga — Técnica Universitaria en Química",
+  metadataBase: new URL("https://florencia-quiroga.com"),
+  title: "Florencia Quiroga · Técnica Universitaria en Química",
   description:
-    "Portfolio profesional de Florencia Quiroga, Técnica Universitaria en Química con perfil analítico y orientación al laboratorio farmacéutico.",
+    "Portfolio profesional de Florencia Quiroga, Técnica Universitaria en Química. Laboratorio analítico y control de calidad en la industria alimentaria y farmacéutica.",
   keywords: [
     "técnica química",
     "laboratorio",
     "HPLC",
     "control de calidad",
+    "industria alimentaria",
+    "buenas prácticas de manufactura",
     "farmacéutico",
     "Florencia Quiroga",
   ],
+  alternates: {
+    canonical: "https://florencia-quiroga.com",
+  },
   openGraph: {
-    title: "Florencia Quiroga — Técnica Universitaria en Química",
+    title: "Florencia Quiroga · Técnica Universitaria en Química",
     description:
-      "Técnica Química con perfil analítico y orientación al laboratorio farmacéutico.",
+      "Técnica Universitaria en Química. Laboratorio analítico y control de calidad en la industria alimentaria y farmacéutica.",
+    url: "https://florencia-quiroga.com",
     type: "website",
   },
 };
