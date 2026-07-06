@@ -1,4 +1,10 @@
-import { Briefcase, FlaskConical, Building2, Factory, Beer } from "lucide-react";
+import {
+  Briefcase,
+  FlaskConical,
+  Building2,
+  Factory,
+  Beer,
+} from "lucide-react";
 
 const experiences = [
   {
@@ -14,7 +20,12 @@ const experiences = [
       "Higienización y sanitización de equipos",
       "Manejo de equipos de planta y línea de envasado",
     ],
-    tags: ["Control de calidad", "BPM y POES", "Trazabilidad", "Industria alimentaria"],
+    tags: [
+      "Control de calidad",
+      "BPM y POES",
+      "Trazabilidad",
+      "Industria alimentaria",
+    ],
   },
   {
     icon: FlaskConical,
@@ -28,7 +39,12 @@ const experiences = [
       "Registro riguroso de datos, procesamiento e interpretación de resultados",
       "Aplicación de Buenas Prácticas de Laboratorio (BPL)",
     ],
-    tags: ["Laboratorio analítico", "Ensayos y bioensayos", "BPL", "Análisis de muestras"],
+    tags: [
+      "Laboratorio analítico",
+      "Ensayos y bioensayos",
+      "BPL",
+      "Análisis de muestras",
+    ],
   },
   {
     icon: Building2,
@@ -61,7 +77,7 @@ const experiences = [
     icon: Beer,
     role: "Elaboración de Bebidas Fermentables",
     company: "Emprendimiento familiar",
-    period: "Marzo 2018 - Abril 2024",
+    period: "Marzo 2018 - Abril 2021",
     current: false,
     tasks: [
       "Seguimiento del proceso de fabricación de cerveza artesanal",
@@ -69,7 +85,12 @@ const experiences = [
       "Control del proceso de fermentación",
       "Higienización, sanitización y control preventivo de equipos",
     ],
-    tags: ["Fermentación", "Control de calidad", "Sanitización", "Materias primas"],
+    tags: [
+      "Fermentación",
+      "Control de calidad",
+      "Sanitización",
+      "Materias primas",
+    ],
   },
 ];
 
