@@ -89,7 +89,7 @@ export default function Hero() {
               </a>
               <span className="flex items-center gap-2 text-sm text-white/40">
                 <MapPin size={13} />
-                Zona Sur, Gran Buenos Aires
+                Zona Sur, Gran Buenos Aires, Argentina
               </span>
             </div>
           </div>
@@ -104,9 +104,8 @@ export default function Hero() {
               {/* Photo container */}
               <div className="relative w-80 h-[480px] rounded-2xl overflow-hidden">
                 <Image
-                  unoptimized
                   src="/florencia-portrait.jpg"
-                  alt="Florencia Quiroga"
+                  alt="Florencia Quiroga, Técnica Universitaria en Química"
                   fill
                   className="object-cover object-top"
                   priority

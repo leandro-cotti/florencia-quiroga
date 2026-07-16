@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+import StructuredData from "@/components/StructuredData";
+import { SITE_URL, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION } from "@/lib/site";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -9,29 +11,56 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://florencia-quiroga.com"),
-  title: "Florencia Quiroga · Técnica Universitaria en Química",
-  description:
-    "Portfolio profesional de Florencia Quiroga, Técnica Universitaria en Química. Laboratorio analítico y control de calidad en la industria alimentaria y farmacéutica.",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   keywords: [
+    "Florencia Quiroga",
+    "técnica universitaria en química",
     "técnica química",
-    "laboratorio",
+    "laboratorio analítico",
     "HPLC",
+    "cromatografía gaseosa",
     "control de calidad",
     "industria alimentaria",
+    "industria farmacéutica",
     "buenas prácticas de manufactura",
-    "farmacéutico",
-    "Florencia Quiroga",
+    "BPM",
+    "POES",
+    "Universidad Nacional de Quilmes",
+    "Zona Sur",
+    "Gran Buenos Aires",
   ],
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
   alternates: {
-    canonical: "https://florencia-quiroga.com",
+    canonical: SITE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   openGraph: {
-    title: "Florencia Quiroga · Técnica Universitaria en Química",
-    description:
-      "Técnica Universitaria en Química. Laboratorio analítico y control de calidad en la industria alimentaria y farmacéutica.",
-    url: "https://florencia-quiroga.com",
-    type: "website",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    type: "profile",
+    firstName: "Florencia",
+    lastName: "Quiroga",
+    locale: "es_AR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
   },
 };
 
@@ -41,8 +70,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html lang="es-AR" className="scroll-smooth">
       <body className={`${jakarta.variable} font-jakarta antialiased`}>
+        <StructuredData />
         {children}
       </body>
     </html>

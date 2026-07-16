@@ -40,7 +40,6 @@ export default function Nav() {
         >
           <div className="w-8 h-8 rounded-lg overflow-hidden ring-2 ring-[var(--color-teal)]/60 flex-shrink-0">
             <Image
-              unoptimized
               src="/florencia-lab.png"
               alt="Florencia Quiroga"
               width={32}

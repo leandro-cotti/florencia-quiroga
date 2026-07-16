@@ -7,7 +7,6 @@ export default function Footer() {
         <div className="flex items-center gap-2.5">
           <div className="w-7 h-7 rounded-lg overflow-hidden ring-2 ring-[var(--color-teal)]/60 flex-shrink-0">
             <Image
-              unoptimized
               src="/florencia-lab.png"
               alt="Florencia Quiroga"
               width={28}
@@ -20,7 +19,7 @@ export default function Footer() {
           </span>
         </div>
         <p className="text-xs text-white/30 text-center">
-          Técnica Universitaria en Química · Zona Sur, Gran Buenos Aires
+          Técnica Universitaria en Química · Zona Sur, Gran Buenos Aires, Argentina
         </p>
         <p className="text-xs text-white/30">
           {new Date().getFullYear()}

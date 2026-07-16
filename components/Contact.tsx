@@ -63,7 +63,8 @@ export default function Contact() {
           </h2>
           <p className="text-[var(--color-ink-muted)] leading-relaxed mb-12 max-w-lg mx-auto">
             Estoy disponible para nuevas oportunidades laborales en el área
-            química y farmacéutica. No dudes en escribirme.
+            química, alimentaria y farmacéutica en Zona Sur y Gran Buenos
+            Aires. No dudes en escribirme.
           </p>
 
           {/* Contact cards */}
