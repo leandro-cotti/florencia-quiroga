@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const links = [
   { label: "Sobre mí", href: "#sobre-mi" },
@@ -10,6 +11,7 @@ const links = [
   { label: "Experiencia", href: "#experiencia" },
   { label: "Educación", href: "#educacion" },
   { label: "Certificaciones", href: "#certificaciones" },
+  { label: "Artículos", href: "#articulos" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -57,9 +59,9 @@ export default function Nav() {
         </a>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden lg:flex items-center gap-1">
           {links.map((l) => (
-            <a
+            <Link
               key={l.href}
               href={l.href}
               className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
@@ -69,7 +71,7 @@ export default function Nav() {
               }`}
             >
               {l.label}
-            </a>
+            </Link>
           ))}
           <a
             href="#contacto"
@@ -81,7 +83,7 @@ export default function Nav() {
 
         {/* Mobile toggle */}
         <button
-          className={`md:hidden p-2 rounded-md transition-colors ${
+          className={`lg:hidden p-2 rounded-md transition-colors ${
             scrolled ? "text-[var(--color-ink)]" : "text-white"
           }`}
           onClick={() => setOpen(!open)}
@@ -93,16 +95,16 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-white border-t border-[var(--color-border)] px-6 py-4 flex flex-col gap-1">
+        <div className="lg:hidden bg-white border-t border-[var(--color-border)] px-6 py-4 flex flex-col gap-1">
           {links.map((l) => (
-            <a
+            <Link
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
               className="px-3 py-2.5 rounded-md text-sm font-medium text-[var(--color-ink-muted)] hover:text-[var(--color-teal)] hover:bg-[var(--color-teal-light)] transition-colors"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
           <a
             href="#contacto"

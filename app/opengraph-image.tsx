@@ -100,7 +100,6 @@ export default async function OpengraphImage() {
             paddingRight: 70,
           }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={portraitSrc}
             alt=""

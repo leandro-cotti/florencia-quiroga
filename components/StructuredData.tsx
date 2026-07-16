@@ -62,18 +62,12 @@ const structuredData = {
       inLanguage: "es-AR",
       publisher: { "@id": `${SITE_URL}/#person` },
     },
-    {
-      "@type": "ProfilePage",
-      "@id": `${SITE_URL}/#profilepage`,
-      url: SITE_URL,
-      name: "Florencia Quiroga · Técnica Universitaria en Química",
-      isPartOf: { "@id": `${SITE_URL}/#website` },
-      mainEntity: { "@id": `${SITE_URL}/#person` },
-      inLanguage: "es-AR",
-    },
   ],
 };
 
+// Person y WebSite son definiciones de entidad: valen en todo el sitio y otras
+// páginas las referencian por @id. ProfilePage, en cambio, describe únicamente
+// la home, así que se emite sólo ahí (ver HomeStructuredData).
 export default function StructuredData() {
   return (
     <script
