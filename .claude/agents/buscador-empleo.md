@@ -59,3 +59,13 @@ Markdown, una tabla por rubro, ordenada por prioridad (búsqueda activa reciente
 No uses rayas ni guiones largos (— o –) en ningún texto, tampoco en los asuntos sugeridos: usá guion común (-), coma o dos puntos. Delatan que lo escribió una IA.
 
 Debajo de cada tabla, notas cortas si hace falta (requisitos que no cumple, asunto que piden en el mail, código de referencia, etc.). Si el aviso pide un asunto específico, ponelo textual.
+
+Para tandas de búsquedas nuevas (lo más habitual ahora), usá el formato de `busqueda_trabajo/mails_2026-10_tanda4.md`: secciones "Avisos nuevos con mail", "Mails nuevos de empresas (espontánea)", "Avisos nuevos por portal" y "Recordatorios", ordenadas por fecha de publicación descendente y con ★ en las de mejor encaje.
+
+## Al terminar una tanda
+
+Si trabajás solo (no como parte de varias búsquedas en paralelo):
+1. Guardá el resultado en `busqueda_trabajo/mails_AAAA-MM_tandaN.md` (N = siguiente número).
+2. Agregá los mails nuevos a `busqueda_trabajo/mails_ya_usados.txt` (minúsculas, `sort -u`).
+3. Generá la versión para Outlook con `python3 busqueda_trabajo/tools/md2outlook.py <archivo.md> --copy`.
+Si sos una de varias búsquedas en paralelo, no toques `mails_ya_usados.txt`: lo actualiza quien consolida.

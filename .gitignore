@@ -41,5 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 # Other
-busqueda_trabajo
 empresas
+
+# Generados (se regeneran con busqueda_trabajo/tools/md2outlook.py)
+busqueda_trabajo/*_outlook.html
