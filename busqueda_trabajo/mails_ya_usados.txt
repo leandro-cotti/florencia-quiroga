@@ -83,6 +83,7 @@ gestionhumanacv@roemmers.com.ar
 graduados@unq.edu.ar
 ha5267@bhidalgo.com.ar
 hola@buenosairesaguas.com.ar
+igiordano@bairescatering.com.ar
 ignacio@talentsolutionsrrhh.com
 induser@induser.com.ar
 info.arg@fresenius-kabi.com
@@ -98,6 +99,7 @@ info@arquimiasa.com.ar
 info@autopartesrida.com
 info@belcolor.com.ar
 info@berkelercerveza.com
+info@biafar.com.ar
 info@bioext.com
 info@biomed.com.ar
 info@bolsaflex.com.ar
@@ -129,6 +131,7 @@ info@fercollubricantes.com.ar
 info@fibercord.com.ar
 info@fineandpure.com.ar
 info@gefink.com.ar
+info@gentech.com.ar
 info@gora.com.ar
 info@grupocepas.com
 info@gruporag.com
@@ -185,6 +188,7 @@ info@tink.com.ar
 info@varelab.com.ar
 info@veglia.com.ar
 intermediacionlaboral@quilmes.gov.ar
+j.l@adnrh.com.ar
 klonal@klonal.com.ar
 kormosdiego@daykent.com.ar
 lab.olivieri.srl@gmail.com
@@ -199,11 +203,14 @@ laboratorio@stamboulian.com.ar
 mariofabianlange@gmail.com
 mcn@molinocentralnorte.com.ar
 mscoach2000@yahoo.com.ar
+ngconsultoriarrhh@gmail.com
+nhstudio.ar@gmail.com
 oceanoaguasoda@hotmail.com
 oficina@adhecoweb.com.ar
 oficinadeempleo@berazategui.gob.ar
 peanuts@olega.com.ar
 percanplast@gmail.com
+personal@biol.com.ar
 plasticos@plasticquil.com.ar
 plasticoslires@yahoo.com.ar
 poly@polydem.com.ar
@@ -212,6 +219,7 @@ postulacionesquilmes@pullmen.com
 pretty@laboratoriospretty.com.ar
 productossolitas@hotmail.com
 recepcion@productospozo.com.ar
+recepcion@pullmen.com
 recepcion@queruclor.com.ar
 recursoshumanos@chilgolosinas.com.ar
 recursoshumanos@drogueriafarmasun.com.ar
@@ -219,6 +227,7 @@ recursoshumanos@farmaciavip.com.ar
 recursoshumanos@laboratorio-ariston.com.ar
 recursoshumanos@laboratoriodrawer.com.ar
 recursoshumanos@refresnow.com.ar
+rh.ls.argentina@alsglobal.com
 rrhh@alfajoresguaymallen.com.ar
 rrhh@barbaroja.com.ar
 rrhh@bioingepro.com.ar
@@ -230,6 +239,7 @@ rrhh@dromex.com.ar
 rrhh@eczane.com.ar
 rrhh@eurocor.com.ar
 rrhh@fideosquerico.com.ar
+rrhh@industriayambiente.com.ar
 rrhh@ivessbonsal.com
 rrhh@laboratoriodearomas.com
 rrhh@laboratoriosmar.com.ar
@@ -240,13 +250,19 @@ rrhh@magistral-lacroze.com.ar
 rrhh@molinocampodonico.com.ar
 rrhh@papelerarosatosa.com.ar
 rrhh@prodea.com.ar
+rrhh@productosmalu.com.ar
 rrhh@psqargentina.com
 rrhh@tecgloves.com
+rrhh@vach.ar
+rrhh@weizur.com
 rrhh2@biotenk.com.ar
 rrhh2@fradealco.com.ar
+s.vicente@madeconsulting.com.ar
 seleccion.tarazona@gmail.com
 seleccion@brandivin.com.ar
+seleccion@icconsultora.com
 seleccion@laboratoriolaca.com
+seleccion@surcg.com
 seleccionrh@stamboulian.com.ar
 sigma@quimicasigma.com
 sumate@gemepe.com.ar
@@ -276,4 +292,5 @@ ventas@protefilm.com.ar
 ventas@tecnometal.com.ar
 ventas@vasana.com.ar
 viacosenza@gmail.com
+vutrilla@estrategiarrhh.com.ar
 wilde@laboratoriogalizia.com.ar
