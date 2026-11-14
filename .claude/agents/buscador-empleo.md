@@ -34,13 +34,21 @@ Sos un reclutador/investigador laboral especializado en el mercado de laboratori
 
 ## Cómo correr una tanda (para quien orquesta)
 
-Una tanda se corre con **varios agentes en paralelo, uno por plataforma**, y después se consolida. Un solo agente con WebSearch/WebFetch encuentra muy poco (tanda 5: 9 mails). Reparto recomendado:
-1. **LinkedIn posts** (Chrome con sesión iniciada): búsqueda de contenido ordenada por fecha, muchas variantes de palabras clave. Es la fuente que más mails da.
-2. **LinkedIn Empleos** (Chrome): avisos ordenados por fecha en zona sur, CABA y La Plata; leer la descripción completa buscando mails.
-3. **Bumeran, ZonaJobs y Computrabajo** (Chrome, porque Bumeran bloquea a WebFetch con Cloudflare): detectar búsquedas activas y buscar el mail en la web de la empresa.
-4. **Indeed (herramienta MCP de Indeed), Jooble, Empleos Clarín, Revista Empleo y Google** con frases tipo "enviar CV".
-5. **Consultoras de RRHH y bolsas** (Hidalgo, Pullmen, C&R, Adecco, Manpower, Randstad, Bayton, Grupo Gestión, Talent Solutions, HiringRoom, bolsas UNQ/UNLP/UTN, Colegio de Químicos, AQA).
-Cada agente escribe su parcial en un archivo aparte y no toca `mails_ya_usados.txt`; quien orquesta consolida, deduplica y cierra la tanda.
+Una tanda se corre con **varios agentes en paralelo** y después se consolida. Un solo agente con WebSearch/WebFetch encuentra muy poco (tanda 5: 13 mails).
+
+**Clave: los avisos nuevos con mail son pocos por semana (entre 5 y 20).** El volumen sale del envío espontáneo a fuentes que todavía no se recorrieron. Por eso cada tanda tiene que combinar las dos cosas: 1 o 2 agentes de avisos nuevos y 3 o 4 agentes de envío espontáneo, cada uno con un rubro o zona **que no se haya usado antes** (revisá las tandas previas para elegir). En la tanda 7 esto dio 104 mails nuevos, contra 13 y 19 en las tandas 5 y 6, que solo buscaron avisos.
+
+Agentes de avisos nuevos:
+1. **LinkedIn posts** (Chrome con sesión). Es la fuente de avisos que más mails da. Lo que mejor rinde es la actividad de reclutadoras que republican búsquedas con mail y asunto, sobre todo Macu Pucci (linkedin.com/in/macupucci): buscar "consejo macu" + calidad / laboratorio / químico. El filtro "Mes pasado" con frases cortas rinde más que ordenar por fecha. Muchos mails están solo en la imagen del post: leerlos con captura.
+2. **Portales**: LinkedIn Empleos (la API pública jobs-guest sirve para variar ubicaciones), Computrabajo (con curl si WebFetch vuelve vacío), Bumeran y ZonaJobs (Chrome, Cloudflare bloquea WebFetch), Indeed MCP. Detectar búsquedas activas y buscar el mail en la web de la empresa.
+LinkedIn solo carga más resultados si la pestaña está visible: **no corras dos agentes con Chrome al mismo tiempo** (o dale Chrome solo al de posts y que el de portales use curl, WebFetch y la API pública).
+
+Fuentes para envío espontáneo (marcá en el README cuáles se usaron):
+- Ya usadas: parques industriales y municipios de zona sur (tandas 1 y 2); laboratorios acreditados del OAA, COFILAB, socios de CALIBA, listado OPDS de laboratorios, Ezeiza/Echeverría/Cañuelas, Parque Industrial La Plata, CABA sur, farmacias/droguerías de Alfabeta, cervecerías y tratamiento de agua (tanda 7).
+- APIs y listados útiles: `https://oaa.org.ar/api/public/acreditaciones` (JSON con mail de cada laboratorio acreditado), listado OPDS `https://sistemas.ambiente.gba.gob.ar/intra/Laboratorio/ConsultaWeb.php`, directorio de laboratorios de Alfabeta, listados ANMAT de plantas de cosméticos y domisanitarios (PDF), nómina APRA de laboratorios ambientales de CABA.
+- Pendientes de recorrer: plantas de los listados ANMAT de cosméticos y domisanitarios en zona sur que no tengan mail aún, frigoríficos y plantas habilitadas por SENASA en zona sur, socios de cámaras (CAPA cosmética, CAIQ química, COPAL alimentos, CILFA/COOPERALA farma), proveedores de la refinería YPF La Plata, Polo Dock Sud, zona oeste cercana (La Matanza sur).
+
+Cada agente escribe su parcial en un archivo aparte y no toca `mails_ya_usados.txt`; quien orquesta consolida, deduplica (también entre parciales, por empresa) y cierra la tanda.
 
 ## Herramientas
 
